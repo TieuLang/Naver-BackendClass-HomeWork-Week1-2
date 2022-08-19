@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<table style="width:35%">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Favorite</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="person: ${persons}">
+    <td align="center" th:text="${person.Id}"></td>
+    <td align="center" th:text="${person.Name}"></td>
+    <td align="center" th:text="${person.Age}"></td>
+    <td align="center" th:text="${person.Favorite}"></td>
+  </tr>
+  </tbody>
+</table>
+</html>
